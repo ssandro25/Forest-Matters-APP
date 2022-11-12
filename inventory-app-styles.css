@@ -20,8 +20,6 @@
     background-image: unset !important;
     font-family: "Font Awesome 5 Free";
     content: "\2b";
-    display: inline-block;
-    vertical-align: middle;
     font-weight: 900;
 }
 
@@ -29,8 +27,6 @@
     background-image: unset !important;
     font-family: "Font Awesome 5 Free";
     content: "\f068";
-    display: inline-block;
-    vertical-align: middle;
     font-weight: 900;
     transform: unset;
 }
