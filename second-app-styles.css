@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    box-shadow: unset !important;
+}
+
+.accordion-button  {
+    background-color: #033D24;
+    color: #fff;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #033D24 !important;
+    color: #fff !important;
+}
+.accordion-button::after {
+    background-image: unset !important;
+    font-family: "Font Awesome 5 Free";
+    content: "\2b";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: unset !important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    transform: unset;
+}

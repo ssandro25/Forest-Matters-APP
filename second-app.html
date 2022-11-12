@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="second-app-styles.css">
+    <title>Document</title>
+</head>
+<body>
+<main class="my-3">
+    <div class="container-fluid">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="one">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-one" aria-expanded="false" aria-controls="panel-one">
+                        1. ლიტერის მისამართი და ს.ტ.ფ. მიწის ზოგადი მონაცემები
+                    </button>
+                </h2>
+                <div id="panel-one" class="accordion-collapse collapse show" aria-labelledby="one">
+                    <div class="accordion-body">
+                        <div class="row m-0">
+                            <div class="col-md-6">
+                                <label class="form-label text-truncate w-100" for="soil_category">მიწის კატეგორია</label>
+
+                                <select class="form-select" id="soil_category">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mt-md-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="xs">ხს</label>
+
+                                <select class="form-select" id="xs">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="gfdu">გ.ფ.დ.უ.</label>
+
+                                <select class="form-select" id="gfdu">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3 mt-3">
+                                <label class="form-label text-truncate w-100" for="exposure">ექსპოზიცია</label>
+
+                                <select class="form-select" id="exposure">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3 mt-3">
+                                <label class="form-label text-truncate w-100" for="slope">დაქანება</label>
+
+                                <select class="form-select" id="slope">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3 mt-3">
+                                <label class="form-label text-truncate w-100" for="szd">ს.ზ.დ.</label>
+
+                                <select class="form-select" id="szd">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3 mt-3">
+                                <label class="form-label text-truncate w-100" for="erosion_type">ეროზიის სახე</label>
+
+                                <select class="form-select" id="erosion_type">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3 mt-3">
+                                <label class="form-label text-truncate w-100" for="erosion_degree">ეროზიის ხარისხი</label>
+
+                                <select class="form-select" id="erosion_degree">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3 mt-3">
+                                <label class="form-label text-truncate w-100" for="area">ფართობი</label>
+
+                                <input type="number" class="form-control" id="area"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="two">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-two" aria-expanded="false" aria-controls="panel-two">
+                        2. დაპროექტებული ღონისძიებები
+                    </button>
+                </h2>
+                <div id="panel-two" class="accordion-collapse collapse" aria-labelledby="two">
+                    <div class="accordion-body">
+                        <div class="row row-cols-lg-5 row-cols-2 ma-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="event_first">ღონისძიება I</label>
+
+                                <select class="form-select" id="event_first">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="percent">%</label>
+
+                                <input type="number" class="form-control" id="percent" disabled>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="event_second">ღონისძიება II</label>
+
+                                <select class="form-select" id="event_second">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="event_third">ღონისძიება III</label>
+
+                                <select class="form-select" id="event_third">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="target_species">მიზნობრივი სახეობა</label>
+
+                                <select class="form-select" id="target_species">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="three">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-three" aria-expanded="false" aria-controls="panel-three">
+                        3. ტყის ზოგადი მახასიათებლები
+                    </button>
+                </h2>
+                <div id="panel-three" class="accordion-collapse collapse" aria-labelledby="three">
+                    <div class="accordion-body">
+                       <div class="row row-cols-lg-6 row-cols-2 ma-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="dominant_species">გაბატონებული სახეობა</label>
+
+                                <select class="form-select" id="dominant_species">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="credit_rating">ბონიტეტი</label>
+
+                                <select class="form-select" id="credit_rating">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="credit_type">ბონიტეტის სახეობა</label>
+
+                                <select class="form-select" id="credit_type">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="forest_type">ტყის ტიპი</label>
+
+                                <select class="form-select" id="forest_type">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="location_type">ადგილსამყოფელოს ტიპი</label>
+
+                                <select class="form-select" id="location_type">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="cutting_year">ჭრის წელი</label>
+
+                                <input type="number" class="form-control" id="cutting_year"/>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="four">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-four" aria-expanded="false" aria-controls="panel-four">
+                        4. ჩახერგილობა
+                    </button>
+                </h2>
+                <div id="panel-four" class="accordion-collapse collapse" aria-labelledby="four">
+                    <div class="accordion-body">
+                        <div class="row row-cols-lg-auto row-cols-md-3 row-cols-2 ma-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="suffocation_general">ჩახერგილობა საერთო</label>
+
+                                <input type="number" class="form-control" id="suffocation_general"/>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="suffocation_liquid">ჩახერგილობა ლიკვიდი</label>
+
+                                <input type="number" class="form-control" id="suffocation_liquid" disabled/>
+                            </div>
+
+                            <div class="col mt-md-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="pressed">ზეხმელი</label>
+
+                                <input type="number" class="form-control" id="pressed"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="five">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-five" aria-expanded="false" aria-controls="panel-five">
+                        10. ტაქსაციური დახასიათება
+                    </button>
+                </h2>
+                <div id="panel-five" class="accordion-collapse collapse" aria-labelledby="five">
+                    <div class="accordion-body">
+                        <div class="row ma-0">
+                            <div class="col-lg-9">
+                                <label class="form-label text-truncate w-100" for="tier">იარუსი</label>
+
+                                <select class="form-select" id="tier">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="frequency">სიხშირე</label>
+
+                                <select class="form-select" id="frequency">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="coefficient">კოეფ.</label>
+
+                                <input type="number" class="form-control" id="coefficient"/>
+                            </div>
+
+                            <div class="col-lg-2 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="type">სახეობა</label>
+
+                                <select class="form-select" id="type">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-md-4 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="aw">A წ</label>
+
+                                <select class="form-select" id="aw">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-md-4 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="hm">H მ</label>
+
+                                <select class="form-select" id="hm">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-md-4 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="dsm">D სმ</label>
+
+                                <select class="form-select" id="dsm">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="commodity_class">სასაქონლო კლასი</label>
+
+                                <select class="form-select" id="commodity_class">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="grove_origin">კორომის წარმოშობა</label>
+
+                                <select class="form-select" id="grove_origin">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="stock">მარაგი</label>
+
+                                <input type="number" class="form-control" id="stock" disabled/>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-3">
+                                <label class="form-label text-truncate w-100">ss</label>
+
+                                <button type="button" class="btn btn-success w-100">ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="six">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-six" aria-expanded="false" aria-controls="panel-six">
+                        31. მოზარდი
+                    </button>
+                </h2>
+                <div id="panel-six" class="accordion-collapse collapse" aria-labelledby="six">
+                    <div class="accordion-body">
+                        <div class="row m-0">
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <label class="form-label text-truncate w-100" for="quantity">რაოდენობა</label>
+
+                                <input type="number" class="form-control" id="quantity"/>
+                            </div>
+
+                            <div class="col-lg-1 col-md-4 col-6">
+                                <label class="form-label text-truncate w-100" for="height">სიმაღლე</label>
+
+                                <select class="form-select" id="height">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-md-4 col-6 mt-md-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="age">ასაკი</label>
+
+                                <select class="form-select" id="age">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="coefficient_one">კოეფ. 1</label>
+
+                                <input type="number" class="form-control" id="coefficient_one" disabled/>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="type_one">სახეობა 1</label>
+
+                                <select class="form-select" id="type_one">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="coefficient_two">კოეფ. 2</label>
+
+                                <input type="number" class="form-control" id="coefficient_two" disabled/>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="type_two">სახეობა 2</label>
+
+                                <select class="form-select" id="type_two">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="coefficient_three">კოეფ. 3</label>
+
+                                <input type="number" class="form-control" id="coefficient_three" disabled/>
+                            </div>
+
+                            <div class="col-lg-1 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="type_three">სახეობა 3</label>
+
+                                <select class="form-select" id="type_three">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100">შეფასება</label>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="satisfactory">
+                                    <label class="form-check-label" for="satisfactory">
+                                        დამაკმაყოფილებელი
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="seven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-seven" aria-expanded="false" aria-controls="panel-seven">
+                        32. ქვეტყე
+                    </button>
+                </h2>
+                <div id="panel-seven" class="accordion-collapse collapse" aria-labelledby="seven">
+                    <div class="accordion-body">
+                        <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 ma-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="distribution">განფენილობა</label>
+
+                                <select class="form-select" id="distribution">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="daf_percent">დაფ. %</label>
+
+                                <select class="form-select" id="daf_percent">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-md-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="type_one_two">სახეობა 1</label>
+
+                                <select class="form-select" id="type_one_two">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="type_two_two">სახეობა 2</label>
+
+                                <select class="form-select" id="type_two_two">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="type_three_two">სახეობა 3</label>
+
+                                <select class="form-select" id="type_three_two">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="height_two">სიმაღლე</label>
+
+                                <select class="form-select" id="height_two">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="eight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-eight" aria-expanded="false" aria-controls="panel-eight">
+                        36. წყალი
+                    </button>
+                </h2>
+                <div id="panel-eight" class="accordion-collapse collapse" aria-labelledby="eight">
+                    <div class="accordion-body">
+                        <div class="row row-cols-lg-auto row-cols-md-3 row-cols-2 ma-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="river">მდინარე</label>
+
+                                <select class="form-select" id="river">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="well">წყარო</label>
+
+                                <select class="form-select" id="well">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-md-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="river_width">მდინარის სიგანე</label>
+
+                                <input type="number" class="form-control" id="river_width"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="nine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-nine" aria-expanded="false" aria-controls="panel-nine">
+                        39. ანტროპოგენული ტრანსფორმაცია
+                    </button>
+                </h2>
+                <div id="panel-nine" class="accordion-collapse collapse" aria-labelledby="nine">
+                    <div class="accordion-body">
+                        <div class="row row-cols-lg-2 row-cols-1 ma-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="anthropogenic_transformation_type">ანტროპოგენული ტრანსფორმაციის ტიპი</label>
+
+                                <select class="form-select" id="anthropogenic_transformation_type">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="anthropogenic_transformation_quality">ანტროპოგენული ტრანსფორმაციის ხარისხი</label>
+
+                                <select class="form-select" id="anthropogenic_transformation_quality">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="ten">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-ten" aria-expanded="false" aria-controls="panel-ten">
+                        28. მისადგომობა სამეურნეო ზემოქმედებისთვის
+                    </button>
+                </h2>
+                <div id="panel-ten" class="accordion-collapse collapse" aria-labelledby="ten">
+                    <div class="accordion-body">
+                        <div class="row ma-0">
+                            <div class="col-lg-6 col-6">
+                                <label class="form-label text-truncate w-100" for="access_category">მისადგომის კატეგორია</label>
+
+                                <select class="form-select" id="access_category">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="transport_type">ტრანსპორტის სახე</label>
+
+                                <select class="form-select" id="transport_type">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="way_get_out">გზიდან დაცილება</label>
+
+                                <select class="form-select" id="way_get_out">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="eleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-eleven" aria-expanded="false" aria-controls="panel-eleven">
+                        23. დამატებითი ინფორმაცია
+                    </button>
+                </h2>
+                <div id="panel-eleven" class="accordion-collapse collapse" aria-labelledby="eleven">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label for="additional_information_comments" class="form-label">კომენტარები</label>
+                            <input type="text" class="form-control" id="additional_information_comments">
+                        </div>
+
+                        <div>
+                            <label for="additional_information_other" class="form-label">დამატებითი</label>
+                            <textarea class="form-control" id="additional_information_other" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twelve" aria-expanded="false" aria-controls="panel-twelve">
+                        11. ტყის კულტურები
+                    </button>
+                </h2>
+                <div id="panel-twelve" class="accordion-collapse collapse" aria-labelledby="twelve">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirteen" aria-expanded="false" aria-controls="panel-thirteen">
+                        12. დაზიანებული კორომი
+                    </button>
+                </h2>
+                <div id="panel-thirteen" class="accordion-collapse collapse" aria-labelledby="thirteen">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="fourteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-fourteen" aria-expanded="false" aria-controls="panel-fourteen">
+                        13. ხაზობრივი განფენილობის მიწები
+                    </button>
+                </h2>
+                <div id="panel-fourteen" class="accordion-collapse collapse" aria-labelledby="fourteen">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="fiveteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-fiveteen" aria-expanded="false" aria-controls="panel-fiveteen">
+                        14. ბალახეული მცენარეები და კენკროვნები
+                    </button>
+                </h2>
+                <div id="panel-fiveteen" class="accordion-collapse collapse" aria-labelledby="fiveteen">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sixteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-sixteen" aria-expanded="false" aria-controls="panel-sixteen">
+                        15. შესრულებული სამეურნეო ღონისძიებები
+                    </button>
+                </h2>
+                <div id="panel-sixteen" class="accordion-collapse collapse" aria-labelledby="sixteen">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="seventeen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-seventeen" aria-expanded="false" aria-controls="panel-seventeen">
+                        16. არამერქნული ნედლეული
+                    </button>
+                </h2>
+                <div id="panel-seventeen" class="accordion-collapse collapse" aria-labelledby="seventeen">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="eighteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-eighteen" aria-expanded="false" aria-controls="panel-eighteen">
+                        17. სასოფლო-სამეურნეო სავარგულები
+                    </button>
+                </h2>
+                <div id="panel-eighteen" class="accordion-collapse collapse" aria-labelledby="eighteen">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="nineteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-nineteen" aria-expanded="false" aria-controls="panel-nineteen">
+                        19. ჭაობების აღწერა
+                    </button>
+                </h2>
+                <div id="panel-nineteen" class="accordion-collapse collapse" aria-labelledby="nineteen">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twenty">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twenty" aria-expanded="false" aria-controls="panel-twenty">
+                        21. რეკრეაციული დახასიათება
+                    </button>
+                </h2>
+                <div id="panel-twenty" class="accordion-collapse collapse" aria-labelledby="twenty">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentyOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentyOne" aria-expanded="false" aria-controls="panel-twentyOne">
+                        22. ბაღების დახასიათება
+                    </button>
+                </h2>
+                <div id="panel-twentyOne" class="accordion-collapse collapse" aria-labelledby="twentyOne">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentyTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentyTwo" aria-expanded="false" aria-controls="panel-twentyTwo">
+                        23. უბნის თავისებურება
+                    </button>
+                </h2>
+                <div id="panel-twentyTwo" class="accordion-collapse collapse" aria-labelledby="twentyTwo">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentyThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentyThree" aria-expanded="false" aria-controls="panel-twentyThree">
+                        24. ნიადაგის დახასიათება
+                    </button>
+                </h2>
+                <div id="panel-twentyThree" class="accordion-collapse collapse" aria-labelledby="twentyThree">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentyFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentyFour" aria-expanded="false" aria-controls="panel-twentyFour">
+                        25. პლანტაცია
+                    </button>
+                </h2>
+                <div id="panel-twentyFour" class="accordion-collapse collapse" aria-labelledby="twentyFour">
+                    <div class="accordion-body">
+                       123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentyFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentyFive" aria-expanded="false" aria-controls="panel-twentyFive">
+                        26. სელექციური შეფასება
+                    </button>
+                </h2>
+                <div id="panel-twentyFive" class="accordion-collapse collapse" aria-labelledby="twentyFive">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentySex">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentySex" aria-expanded="false" aria-controls="panel-twentySex">
+                        28. მისადგომობა სამეურნეო ზემოქმედებისთვის
+                    </button>
+                </h2>
+                <div id="panel-twentySex" class="accordion-collapse collapse" aria-labelledby="twentySex">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentySeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentySeven" aria-expanded="false" aria-controls="panel-twentySeven">
+                        35. კოორდინატები
+                    </button>
+                </h2>
+                <div id="panel-twentySeven" class="accordion-collapse collapse" aria-labelledby="twentySeven">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentyEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentyEight" aria-expanded="false" aria-controls="panel-twentyEight">
+                        36. სანახის ინდექსი
+                    </button>
+                </h2>
+                <div id="panel-twentyEight" class="accordion-collapse collapse" aria-labelledby="twentyEight">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="twentyNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-twentyNine" aria-expanded="false" aria-controls="panel-twentyNine">
+                        38. ეკონომიკური შეფასება
+                    </button>
+                </h2>
+                <div id="panel-twentyNine" class="accordion-collapse collapse" aria-labelledby="twentyNine">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirty">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirty" aria-expanded="false" aria-controls="panel-thirty">
+                        34. ლანდშაფტურ-ეკოლოგიური კარკასი
+                    </button>
+                </h2>
+                <div id="panel-thirty" class="accordion-collapse collapse" aria-labelledby="thirty">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirtyOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirtyOne" aria-expanded="false" aria-controls="panel-thirtyOne">
+                        37. ანთროპოგენული ტრანსფორმაცია
+                    </button>
+                </h2>
+                <div id="panel-thirtyOne" class="accordion-collapse collapse" aria-labelledby="thirtyOne">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirtyTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirtyTwo" aria-expanded="false" aria-controls="panel-thirtyTwo">
+                        40 „პოტენციური კატასტროფული პროცესების შეფასება“
+                    </button>
+                </h2>
+                <div id="panel-thirtyTwo" class="accordion-collapse collapse" aria-labelledby="thirtyTwo">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirtyThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirtyThree" aria-expanded="false" aria-controls="panel-thirtyThree">
+                        33. მცენარეთა სახეობების რაოდენობრივი მრავალფეროვნება
+                    </button>
+                </h2>
+                <div id="panel-thirtyThree" class="accordion-collapse collapse" aria-labelledby="thirtyThree">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirtyFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirtyFour" aria-expanded="false" aria-controls="panel-thirtyFour">
+                        42. ცხოველთა სამყარო
+                    </button>
+                </h2>
+                <div id="panel-thirtyFour" class="accordion-collapse collapse" aria-labelledby="thirtyFour">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirtyFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirtyFive" aria-expanded="false" aria-controls="panel-thirtyFive">
+                        43. ფიტომასა და ვარჯის შეკრულობა
+                    </button>
+                </h2>
+                <div id="panel-thirtyFive" class="accordion-collapse collapse" aria-labelledby="thirtyFive">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirtySex">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirtySex" aria-expanded="false" aria-controls="panel-thirtySex">
+                        44. ბუნებრივი განვითარების ბოლო სტადია
+                    </button>
+                </h2>
+                <div id="panel-thirtySex" class="accordion-collapse collapse" aria-labelledby="thirtySex">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="thirtySeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-thirtySeven" aria-expanded="false" aria-controls="panel-thirtySeven">
+                        45. შემადგენლობა ხეთა რაოდენობით
+                    </button>
+                </h2>
+                <div id="panel-thirtySeven" class="accordion-collapse collapse" aria-labelledby="thirtySeven">
+                    <div class="accordion-body">
+                        123
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
