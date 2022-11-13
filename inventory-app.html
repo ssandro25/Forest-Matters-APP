@@ -14,6 +14,49 @@
     <title>ინვენტარიზაცია APP</title>
 </head>
 <body>
+
+<div class="modal fade" id="modalItemOne" tabindex="-1" aria-labelledby="modalItemOneLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalItemOneLabel">სატაქსაციო უბნის ადგილმდებარეობა</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    სვეტში „უბნის №“ ჩაისმება სატაქსაციო უბნის რიგითი ნომერი კვარტლის ფარგლებში, ნომრების გამოშვება (გამოტოვება) დასაშვებია. დაუშვებელია უბნის ნომრის გამეორება.
+                </p>
+
+                <p>
+                    უბნის ფართობი იწერება ჰექტრებში 0,1 ჰექტრის სიზუსტით. თუ უბნის ფართობი გამოისახება მთელი რიცხვით, მაშინ რიცხვის შემდეგ მძიმე და ნული არ იწერება (მაგ. არა 8,0 - არამედ 8), ეს წესი მოქმედებს ყველა მაკეტში, როცა მნიშვნელობა ჩაისმება წილადი რიცხვით.
+                </p>
+
+                <p>
+                    ტყის და ტყის ფონდის მიწის კატეგორიის დაშიფვრა ხდება თანახმად მუდმივი შიფრების ცხრილისა – მიწის კატეგორიები.
+                </p>
+
+                <p>
+                    სვეტში „ხს“ (ხანგრძლივ ვადიანი სარგებლობა, იჯარა) ჩაისმება მოსარგებლის აღმნიშვნელი შიფრები:
+                </p>
+
+                <ul>
+                    <li>ხანგრძლივ ვადიანი გამორიცხული გაანგარიშებიდან;</li>
+                    <li>მოკლე ვადიანი გამორიცხული გაანაგრიშებიდან;</li>
+                    <li>ხანგრძლივ ვადიანი ჩართული გაანგარიშებაში</li>
+                    <li>მოკლე ვადიანი ჩართული გაანგარიშებაში (იგულისხმება ჩართული მთავარი სარგებლობის გაანგარიშებაში).</li>
+                    <li>აგრეთვე შიფრები მთავარი სარგებლობის ჭრის სახეებისა:</li>
+                    <li>თანდათანობითი ჭრა;</li>
+                    <li>ჯგუფურ-ამორჩევითი ჭრა;</li>
+                    <li>ნებით-ამორჩევითი ჭრა;</li>
+                    <li>ხანგრძლივ ვადიანი თანდათანობითი ჭრა;</li>
+                    <li>რეზერვი</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <main class="mb-3">
     <div class="container-fluid main-container">
         <div class="d-flex justify-content-end gap-3 py-2 bg-white sticky-top align-content">
@@ -31,6 +74,20 @@
                 </h2>
                 <div id="panel-one" class="accordion-collapse collapse" aria-labelledby="one">
                     <div class="accordion-body">
+                        <div class="d-flex align-items-center justify-content-between px-2 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="empty_layout_one">
+                                <label class="form-check-label" for="empty_layout_one">
+                                    მაკეტის გამოტოვება
+                                </label>
+                            </div>
+
+                            <div>
+                                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#modalItemOne">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </button>
+                            </div>
+                        </div>
                         <div class="row m-0">
                             <div class="col-md-6">
                                 <label class="form-label text-truncate w-100" for="soil_category">მიწის
@@ -141,7 +198,7 @@
                 </h2>
                 <div id="panel-two" class="accordion-collapse collapse" aria-labelledby="two">
                     <div class="accordion-body">
-                        <div class="row row-cols-lg-5 row-cols-2 ma-0">
+                        <div class="row row-cols-lg-5 row-cols-2 m-0">
                             <div class="col">
                                 <label class="form-label text-truncate w-100" for="event_first">ღონისძიება I</label>
 
@@ -206,7 +263,7 @@
                 </h2>
                 <div id="panel-three" class="accordion-collapse collapse" aria-labelledby="three">
                     <div class="accordion-body">
-                        <div class="row row-cols-lg-6 row-cols-2 ma-0">
+                        <div class="row row-cols-lg-6 row-cols-2 m-0">
                             <div class="col">
                                 <label class="form-label text-truncate w-100" for="dominant_species">გაბატონებული
                                     სახეობა</label>
@@ -284,7 +341,7 @@
                 </h2>
                 <div id="panel-four" class="accordion-collapse collapse" aria-labelledby="four">
                     <div class="accordion-body">
-                        <div class="row row-cols-lg-auto row-cols-md-3 row-cols-2 ma-0">
+                        <div class="row row-cols-lg-auto row-cols-md-3 row-cols-2 m-0">
                             <div class="col">
                                 <label class="form-label text-truncate w-100" for="suffocation_general">ჩახერგილობა
                                     საერთო</label>
@@ -318,7 +375,7 @@
                 </h2>
                 <div id="panel-five" class="accordion-collapse collapse" aria-labelledby="five">
                     <div class="accordion-body">
-                        <div class="row ma-0">
+                        <div class="row m-0">
                             <div class="col-lg-9">
                                 <label class="form-label text-truncate w-100" for="tier">იარუსი</label>
 
@@ -545,7 +602,7 @@
                 </h2>
                 <div id="panel-seven" class="accordion-collapse collapse" aria-labelledby="seven">
                     <div class="accordion-body">
-                        <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 ma-0">
+                        <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 m-0">
                             <div class="col">
                                 <label class="form-label text-truncate w-100" for="distribution">განფენილობა</label>
 
@@ -625,7 +682,7 @@
                 </h2>
                 <div id="panel-ten" class="accordion-collapse collapse" aria-labelledby="ten">
                     <div class="accordion-body">
-                        <div class="row ma-0">
+                        <div class="row m-0">
                             <div class="col-lg-6 col-6">
                                 <label class="form-label text-truncate w-100" for="access_category">მისადგომის
                                     კატეგორია</label>
@@ -697,7 +754,70 @@
                 </h2>
                 <div id="panel-twelve" class="accordion-collapse collapse" aria-labelledby="twelve">
                     <div class="accordion-body">
-                        123
+                        <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 m-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="cultivation_year">
+                                    გაშენების წელი
+                                </label>
+
+                                <input type="number" class="form-control" id="cultivation_year">
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="soil_treatment_method">
+                                    ნიადაგის დამუშავების მეთოდი
+                                </label>
+
+                                <select class="form-select" id="soil_treatment_method">
+                                    <option selected>70 - პირწ.დამუშ</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-md-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="planting_methods">
+                                    დარგვის მეთოდები
+                                </label>
+
+                                <select class="form-select" id="planting_methods">
+                                    <option selected>მექანიზაც</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="rows_distance">
+                                    რიგებს შორის მანძილი დაშორება 0,1 მ სიზუსტით
+                                </label>
+
+                                <input type="number" class="form-control" id="rows_distance">
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="planting_areas_number">
+                                    სარგავი ადგილის რაოდენობა 1000ც/ჰა -ზე 0.1 მ სიზუსტით
+                                </label>
+
+                                <input type="number" class="form-control" id="planting_areas_number">
+                            </div>
+
+                            <div class="col mt-md-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="tc_condition">
+                                    ტ/კ მდგომარეობა
+                                </label>
+
+                                <select class="form-select" id="tc_condition">
+                                    <option selected>დაღუპული</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -711,7 +831,93 @@
                 </h2>
                 <div id="panel-thirteen" class="accordion-collapse collapse" aria-labelledby="thirteen">
                     <div class="accordion-body">
-                        123
+                        <div class="row m-0">
+                            <div class="col-lg-3 col-6">
+                                <label class="form-label text-truncate w-100" for="grove_damage_types">
+                                    კორომის დაზიანების ტიპები
+                                </label>
+
+                                <select class="form-select" id="grove_damage_types">
+                                    <option selected>1 - დაბლითი ხანძარი </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-6">
+                                <label class="form-label text-truncate w-100" for="injury_year">
+                                    დაზიანების წელი
+                                </label>
+
+                                <input type="number" class="form-control" id="injury_year">
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="damaged_woody_type">
+                                    დაზიანებული მერქნიანი სახეობა
+                                </label>
+
+                                <select class="form-select" id="damaged_woody_type">
+                                    <option selected>123444</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="pest_disease_type">
+                                    მავნებლისა და დაავადების სახეობა
+                                </label>
+
+                                <select class="form-select" id="pest_disease_type">
+                                    <option selected>1 - ფიჭვის მზომელა</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="damage_degree">
+                                    დაზიანების ხარისხი
+                                </label>
+
+                                <select class="form-select" id="damage_degree">
+                                    <option selected>1 - სუსტი (დაზ.10%)</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="pest_disease_type_two">
+                                    მავნებლისა და დაავადების სახეობა
+                                </label>
+
+                                <select class="form-select" id="pest_disease_type_two">
+                                    <option selected>1 - ფიჭვის მზომელა</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-6 mt-3">
+                                <label class="form-label text-truncate w-100" for="damage_degree_two">
+                                    დაზიანების ხარისხი
+                                </label>
+
+                                <select class="form-select" id="damage_degree_two">
+                                    <option selected>1 - სუსტი (დაზ.10%)</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -725,7 +931,91 @@
                 </h2>
                 <div id="panel-fourteen" class="accordion-collapse collapse" aria-labelledby="fourteen">
                     <div class="accordion-body">
-                        123
+                        <div class="row row-cols-lg-4 row-cols-2 m-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="track_width">
+                                    ტრასის სიგანე 0,1 მ სიზუსტით
+                                </label>
+
+                                <input type="number" class="form-control" id="track_width">
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="track_length">
+                                    ტრასის სიგრძე
+                                </label>
+
+                                <input type="number" class="form-control" id="track_length">
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="condition">
+                                    მდგომარეობა(შეივსოს აუცილებლად)
+                                </label>
+
+                                <select class="form-select" id="condition">
+                                    <option selected>1 - სუფთა</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="road_destination">
+                                    გზის დანიშნულება
+                                </label>
+
+                                <select class="form-select" id="road_destination">
+                                    <option selected>1 - სატყეო-სამ.</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="cover_type">
+                                    საფარის ტიპი
+                                </label>
+
+                                <select class="form-select" id="cover_type">
+                                    <option selected>2 - ასფალტი</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="carriageway_width">
+                                    გზის სავალი ნაწილის სიგანე 0,1 მ სიზუსტით
+                                </label>
+
+                                <input type="number" class="form-control" id="carriageway_width">
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="seasonal_action">
+                                    სეზონური მოქმედება
+                                </label>
+
+                                <select class="form-select" id="seasonal_action">
+                                    <option selected>2 - ზაფხ.</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="requires_measures">
+                                    საჭიროებს ღონისძიებებს (სიგრძე, სიზუსტით 1კმ-მდე)
+                                </label>
+
+                                <input type="number" class="form-control" id="requires_measures">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -739,7 +1029,41 @@
                 </h2>
                 <div id="panel-fiveteen" class="accordion-collapse collapse" aria-labelledby="fiveteen">
                     <div class="accordion-body">
-                        123
+                        <div class="row row-cols-lg-auto row-cols-2 m-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="accounting_category">
+                                    აღრიცხვის კატეგორია
+                                </label>
+
+                                <select class="form-select" id="accounting_category">
+                                    <option selected>2 - სამკურნალო ნედლეური</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="plants_type">
+                                    მცენარეთა სახეობა
+                                </label>
+
+                                <select class="form-select" id="plants_type">
+                                    <option selected>1 - მოცვი მაღალმთის</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="coverage_percent">
+                                    დაფარვის %
+                                </label>
+
+                                <input type="number" class="form-control" id="coverage_percent">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -753,7 +1077,92 @@
                 </h2>
                 <div id="panel-sixteen" class="accordion-collapse collapse" aria-labelledby="sixteen">
                     <div class="accordion-body">
-                        123
+                        <div class="row row-cols-lg-4 row-cols-2 m-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="event_code">
+                                    ღონისძიების შიფრი
+                                </label>
+
+                                <select class="form-select" id="event_code">
+                                    <option selected>1 - პირწმინდა ჭრა</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="events_year">
+                                    ღონისძიებების ჩატარების წელი
+                                </label>
+
+                                <input type="number" class="form-control" id="events_year">
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="woody_type">
+                                    მერქნიანი სახეობა
+                                </label>
+
+                                <select class="form-select" id="woody_type">
+                                    <option selected>1 - ერთი</option>
+                                    <option value="1">2 - ორი</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="stock_m3ha">
+                                    მარაგი მ3/ჰა-ზე
+                                </label>
+
+                                <input type="number" class="form-control" id="stock_m3ha">
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="performance_analysis">
+                                    შესრულების ანალიზი
+                                </label>
+
+                                <select class="form-select" id="performance_analysis">
+                                    <option selected>1 - დაპრ. და ჩატ.დასაბუთ.</option>
+                                    <option value="1">2 - ორი</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="rate">
+                                    შეფასება
+                                </label>
+
+                                <select class="form-select" id="rate">
+                                    <option selected>2 - არადამაკმაყოფილებელია</option>
+                                    <option value="1">3 - დამაკმაყოფილებელია</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="unsatisfactory_reasons">
+                                    არადამაკმაყოფილებების შესრულების მიზეზები
+                                </label>
+
+                                <select class="form-select" id="unsatisfactory_reasons">
+                                    <option selected>30 - არასაკმარისი ინტენსივობა</option>
+                                    <option value="1">One</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="area_ha">
+                                    ფართობი, ჰა
+                                </label>
+
+                                <input type="number" class="form-control" id="area_ha">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -767,7 +1176,78 @@
                 </h2>
                 <div id="panel-seventeen" class="accordion-collapse collapse" aria-labelledby="seventeen">
                     <div class="accordion-body">
-                        123
+                        <div class="row row-cols-lg-4 row-cols-2 m-0">
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="raw_material_category">
+                                    ნედლეულის კატეგორია
+                                </label>
+
+                                <select class="form-select" id="raw_material_category">
+                                    <option selected>6 - ქერქი</option>
+                                    <option value="1">One</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label text-truncate w-100" for="woody_species">
+                                    მერქნიანი სახეობა
+                                </label>
+
+                                <select class="form-select" id="woody_species">
+                                    <option selected>1 - ერთი</option>
+                                    <option value="1">2 - ორი</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="abundance_year">
+                                    ხნოვანება, წელი
+                                </label>
+
+                                <input type="number" class="form-control" id="abundance_year">
+                            </div>
+
+                            <div class="col mt-lg-0 mt-3">
+                                <label class="form-label text-truncate w-100" for="height">
+                                    სიმაღლე, 0,1მ სიზუსტით
+                                </label>
+
+                                <input type="number" class="form-control" id="height">
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="measurement_units">
+                                    ზომის ერთეული
+                                </label>
+
+                                <select class="form-select" id="measurement_units">
+                                    <option selected>1 - კგ</option>
+                                    <option value="1">2 - ტ</option>
+                                    <option value="2">3 - მ3</option>
+                                </select>
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="yield_per">
+                                    მოსავლიანობა 1 ჰა-ზე სიზუსტით 0,1-მდე
+                                </label>
+
+                                <input type="number" class="form-control" id="yield_per">
+                            </div>
+
+                            <div class="col mt-3">
+                                <label class="form-label text-truncate w-100" for="collection_accessible">
+                                    მისადგომი შეგროვებისათვის
+                                </label>
+
+                                <select class="form-select" id="collection_accessible">
+                                    <option selected>1 - მიწიდან</option>
+                                    <option value="1">2 - ტ2 - მექ.მოწყობ. და ხმარ.</option>
+                                    <option value="2">3 - სპეც.მოწყ.დახმარებ.</option>
+                                </select>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -879,7 +1359,7 @@
                 </h2>
                 <div id="panel-other" class="accordion-collapse collapse" aria-labelledby="other">
                     <div class="accordion-body">
-                        <div class="row row-cols-lg-auto row-cols-md-3 row-cols-2 ma-0">
+                        <div class="row row-cols-lg-auto row-cols-md-3 row-cols-2 m-0">
                             <div class="col">
                                 <label class="form-label text-truncate w-100" for="river">მდინარე</label>
 
@@ -977,7 +1457,7 @@
                 </h2>
                 <div id="panel-thirtyOne" class="accordion-collapse collapse" aria-labelledby="thirtyOne">
                     <div class="accordion-body">
-                        <div class="row row-cols-lg-2 row-cols-1 ma-0">
+                        <div class="row row-cols-lg-2 row-cols-1 m-0">
                             <div class="col">
                                 <label class="form-label text-truncate w-100" for="anthropogenic_transformation_type">ანტროპოგენული
                                     ტრანსფორმაციის ტიპი</label>
